@@ -1,0 +1,13 @@
+[Unit]
+Description=Net Connect Service to Connect to the Net
+
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/devildaemon
+ExecStopPost=/usr/sbin/devildaemon
+RestartSec=1
+Restart=on-abort
+
+[Install]
+
